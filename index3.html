@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>PINK</title>
+</head>
+<body>
+    <header>
+        <a class="header__logo">
+          <img class="header__logo-image" src="img/logotype-mobile.svg" width="226" height="30" alt="PINK"
+        >
+        </a>
+        <nav class="nav">
+            <button class="nav__toggle" type="button">Открыть меню</button>
+            <div class="nav__wrapper">
+                <ul class="nav__list site-list ">
+                    <li class="site-list__item">
+                        <a href="main.html">Главная</a>
+                    </li>
+                    <li class="site-list__item">
+                        <a href="photo.html">Фотографии</a>
+                    </li>
+                    <li class="site-list__item">
+                        <a href="#">Конкурс</a>
+                    </li>
+                    <li class="site-list__item">
+                        <a href="#">HTML Academy</a>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+    </header>
+    <main class="page-main">
+        <h1 class="visually-hidden">Фотографии пользователей</h1>
+        <p class="offer">Взгляните на фотографии, которые выкладывают пользователи!<br>Видите, как не хватает ваших?</p>
+        <div class="panorama">
+            <img class="panorama__img" src="#" alt="Панорама дня" width="100%">
+            <p class="panorama__caption">ПАНОРАМА ДНЯ</p>
+            <div class="panorama__post">
+                <span class="panorama__post--name">Анна<time datetime="2020-11-02 14:55">(5 МИНУТ НАЗАД)</time> </span>
+                <span class="panorama__post--likes">НРАВИТСЯ: 215</span>
+                <img class="panorama__post--heart" src="#" alt="Like">
+                <p class="panorama__post--text">Прыгать или нет? Напишите в комментарии свой совет и смотрите
+                    прямую трансляцию в перископе, задавайте свои вопросы!
+                </p>
+            </div>
+        </div>
+        <div class="posts">
+            <div class="posts__levon">
+                <img class="posts__levon--img" src="#" alt="Фото Левон">
+                <p class="posts__levon--name">
+                    Левон <time datetime="2020-11-02 10:00">5 ЧАСОВ НАЗАД</time>
+                </p>
+                <p class="posts__levon--text">
+                    Вчера он на луну летал, сегодня в руки к нам попал.
+                </p>
+                <span class="posts__levon--likes">НРАВИТСЯ: 356</span>
+                <img class="posts__levon--heart" src="#" alt="Like">
+            </div>
+            <div class="posts__anton">
+                <img class="posts__anton--img" src="#" alt="Фото Антон">
+                <p class="posts__anton--name">
+                    Антон <time datetime="2020-11-02 03:00">5 ЧАСОВ НАЗАД</time>
+                </p>
+                <p class="posts__anton--text">
+                    Соседи будут рады!
+                </p>
+                <span class="posts__anton--likes">НРАВИТСЯ: 666</span>
+                <img class="posts__anton--heart" src="#" alt="Like">
+            </div>
+            <div class="posts__boris">
+                <img class="posts__boris--img" src="#" alt="Фото Борис">
+                <p class="posts__boris--name">
+                    Борис <time datetime="2020-11-01 19:00">20 ЧАСОВ НАЗАД</time>
+                </p>
+                <p class="posts__boris--text">
+                    Здесь могла быть ваша цитата о высоком и вечном.
+                </p>
+                <span class="posts__boris--likes">НРАВИТСЯ: 215</span>
+                <img class="posts__boris--heart" src="#" alt="Like">
+            </div>
+            <div class="posts__sergey">
+                <img class="posts__sergey--img" src="#" alt="Фото Сергей">
+                <p class="posts__sergey--name">
+                    Сергей <time datetime="2020-11-01 14:00">25 ЧАСОВ НАЗАД</time>
+                </p>
+                <p class="posts__sergey--text">
+                    Самая кубанская в мире!
+                </p>
+                <span class="posts__sergey--likes">НРАВИТСЯ: 4</span>
+                <img class="posts__sergey--heart" src="#" alt="Like">
+            </div>
+            <div class="posts__maksim">
+                <img class="posts__maksim--img" src="#" alt="Фото Максим">
+                <p class="posts__maksim--name">
+                    Максим <time datetime="2020-10-31 23:00">40 ЧАСОВ НАЗАД</time>
+                </p>
+                <p class="posts__maksim--text">
+                    Где снег-то?
+                </p>
+                <span class="posts__maksim--likes">НРАВИТСЯ: 150</span>
+                <img class="posts__maksim--heart" src="#" alt="Like">
+            </div>
+            <div class="posts__nadezhda">
+                <img class="posts__nadezhda--img" src="#" alt="Фото Надежда">
+                <p class="posts__nadezhda--name">
+                    Надежда <time datetime="2020-10-31 18:00">45 ЧАСОВ НАЗАД</time>
+                </p>
+                <p class="posts__nadezhda--text">
+                    Всем GM и взаимные лайки!
+                </p>
+                <span class="posts__nadezhda--likes">НРАВИТСЯ: 2560</span>
+                <img class="posts__nadezhda--heart" src="#" alt="Like">
+            </div>
+        </div>
+        <p class="offer">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</p>
+        <div class="filter">
+            <div class="filter__photo">
+                <img class="filter__photo" src="#" alt="Ваше фото">
+            </div>
+            <div class="filter__ranges">
+                <img class="filter__ranges--cut" src="#" alt="Обрезка">
+                <input class="filter__ranges--cut" type="range" min="0" max="100" id="filter__ranges--cut"> <br>
+                <img class="filter__ranges--blur" src="#" alt="Размытие">
+                <input class="filter__ranges--blur" type="range" min="0" max="100" id="filter__ranges--blur"> <br>
+                <img class="filter__ranges--contrast" src="#" alt="Контраст">
+                <input class="filter__ranges--contrast" type="range" min="0" max="100" id="filter__ranges--contrast">
+            </div>
+            <div class="filter-button">
+                <div class="filter-button__toggle-active">
+                    <button class="filter-button__toggle-active" type="button">Запостить</button>
+                </div>
+                <div class="filter-button__toggle-passive">
+                    <button class="filter-button__toggle-passive" type="button">Отмена</button>
+                </div>    
+            </div>
+        </div>
+    </main>
+    <footer class="page-footer">
+        <div class="page-footer_wrapper">
+        <div class="page-footer__logo">
+            <a class="button_logo__link" href="#">PINK</a>
+        </div>    
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link--twitter" href="#">Мы в Твиттере</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link--facebook" href="#">Мы в Фэйсбуке</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link--youtube" href="#">Мы в Ютьюбе</a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <b class="copyright__text">Разработано:</b>
+          <a class="button_copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTMl Academy</a>
+        </div>
+      </div>
+      </footer>
+</body>
+</html>
